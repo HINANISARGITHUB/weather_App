@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Input and Button */
+#city {
+  padding: 10px;
+  width: 70%;
+  border: 2px solid #4facfe;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#city:focus {
+  border-color: #00c6ff;
+}
+
+.btn {
+  padding: 15px 20px;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 16px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #00c6ff;
+  transform: scale(1.05);
+}
+
+/* Weather Details */
+.weather_details {
+  margin-top: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.weather_details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather_details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Weather Icon */
+ #weatherIcon {
+   width: 120px;
+  height: 100px;
+  margin-top: 15px;
+  animation: float 3s ease-in-out infinite;
+} 
+
+/* Error */
+#error {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
