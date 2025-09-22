@@ -120,7 +120,9 @@ body {
 
 @media (max-width:768px) {
   body {
-    padding: 15px;
+    padding: 0px 15px 0px 8px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 .container {
  
