@@ -122,6 +122,13 @@ body {
   body {
     padding: 15px;
   }
+.container {
+ 
+  padding: 20px;
+
+  width: 280px;
+  
+}
 
  
 }
